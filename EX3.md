@@ -76,21 +76,22 @@ INSERT INTO DEPT (DEPTNO, DNAME, LOC) VALUES (40, 'OPERATIONS', 'BOSTON');
 
 ### OUTPUT:
 
+![3-2](https://github.com/Thenmozhi-Palanisamy/EX-3-SubQueries-Views-and-Joins/assets/95198708/63efc640-8735-4104-8183-3f94a5be53df)
 
-![image](https://github.com/Thenmozhi-Palanisamy/EX-3-SubQueries-Views-and-Joins/assets/95198708/55d13c6b-0bbf-4443-a5d7-a3266f597e4f)
 
 ### Q2) List the ename,job,sal of the employee who get minimum salary in the company.
 
 ### QUERY:
+``````
+SELECT ename,job,sal FROM EMP WHERE sal = (SELECT MIN(sal) FROM EMP);
 
-![image](https://github.com/Thenmozhi-Palanisamy/EX-3-SubQueries-Views-and-Joins/assets/95198708/92129740-86a8-4504-831f-c3eb49722c7f)
 
-
+```````
 
 ### OUTPUT:
 
+![3-2](https://github.com/Thenmozhi-Palanisamy/EX-3-SubQueries-Views-and-Joins/assets/95198708/0f17bcbb-5323-45f9-9981-62203365f400)
 
-![image](https://github.com/Thenmozhi-Palanisamy/EX-3-SubQueries-Views-and-Joins/assets/95198708/33751014-9f8a-4cff-91d3-777bc3863536)
 
 
 ### Q3) List ename, job of the employees who work in deptno 10 and his/her job is any one of the job in the department ‘SALES’.
@@ -102,7 +103,8 @@ INSERT INTO DEPT (DEPTNO, DNAME, LOC) VALUES (40, 'OPERATIONS', 'BOSTON');
 
 ### OUTPUT:
 
-![image](https://github.com/Thenmozhi-Palanisamy/EX-3-SubQueries-Views-and-Joins/assets/95198708/c4e13ecb-1142-4e66-924c-46f38c457ad0)
+![3-3](https://github.com/Thenmozhi-Palanisamy/EX-3-SubQueries-Views-and-Joins/assets/95198708/a3bdf8e0-bfef-4ba8-b159-0d69e218337e)
+
 
 
 ### Q4) Create a view empv5 (for the table emp) that contains empno, ename, job of the employees who work in dept 10.
@@ -114,7 +116,8 @@ INSERT INTO DEPT (DEPTNO, DNAME, LOC) VALUES (40, 'OPERATIONS', 'BOSTON');
 
 ### OUTPUT:
 
-![image](https://github.com/Thenmozhi-Palanisamy/EX-3-SubQueries-Views-and-Joins/assets/95198708/33e47964-2a1f-489c-bd74-55f4b5788e08)
+![3-4](https://github.com/Thenmozhi-Palanisamy/EX-3-SubQueries-Views-and-Joins/assets/95198708/ce5a4e50-5bac-4606-8365-9e4185f022ab)
+
 
 
 ### Q5) Create a view with column aliases empv30 that contains empno, ename, sal of the employees who work in dept 30. Also display the contents of the view.
@@ -123,6 +126,9 @@ INSERT INTO DEPT (DEPTNO, DNAME, LOC) VALUES (40, 'OPERATIONS', 'BOSTON');
 
 
 ### OUTPUT:
+
+![3-5](https://github.com/Thenmozhi-Palanisamy/EX-3-SubQueries-Views-and-Joins/assets/95198708/521bc5da-33e2-4c28-8b1f-e5a607df50d9)
+
 
 ### Q6) Update the view empv5 by increasing 10% salary of the employees who work as ‘CLERK’. Also confirm the modifications in emp table
 
@@ -134,8 +140,8 @@ INSERT INTO DEPT (DEPTNO, DNAME, LOC) VALUES (40, 'OPERATIONS', 'BOSTON');
 
 ### OUTPUT:
 
-![image](https://github.com/Thenmozhi-Palanisamy/EX-3-SubQueries-Views-and-Joins/assets/95198708/8fce490c-fe82-4ec7-98f0-dfea9b43b16c)
 
+![3-6](https://github.com/Thenmozhi-Palanisamy/EX-3-SubQueries-Views-and-Joins/assets/95198708/bb4eee60-26c5-44db-9f95-09fd3e46d229)
 
 ## Create a Customer1 Table
 ```sql
